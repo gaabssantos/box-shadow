@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Box Shadow</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="container-box">
+        <div id="config-box">
+          <h1>Configurações da Box Shadow:</h1>
+          <div class="form-control">
+            <label for="horizontal-displacement"
+              >Deslocamento horizontal:</label
+            >
+            <input min="-100" max="100" value="5" id="horizontal" type="range" />
+            <input id="horizontal-text" type="text" value="5" readonly /> px
+          </div>
+          <hr />
+          <div class="form-control">
+            <label for="vertical-displacement">Deslocamento vertical:</label>
+            <input min="-100" max="100" value="5" id="vertical" type="range" />
+            <input id="vertical-text" type="text" value="5" readonly /> px
+          </div>
+          <hr />
+          <div class="form-control">
+            <label for="blur-intensity">Intensidade do borrão:</label>
+            <input min="-100" max="100" value="10" id="blur" type="range" />
+            <input id="blur-text" type="text" value="10" readonly /> px
+          </div>
+          <hr />
+          <div class="form-control">
+            <label for="spread">Intensidade do espalhamento (Spread):</label>
+            <input min="-100" max="100" value="3" id="spread" type="range" />
+            <input id="spread-text" type="text" value="3" readonly /> px
+          </div>
+          <hr />
+          <div class="form-control">
+            <label for="color">Cor da sombra:</label>
+            <input id="color" type="color" />
+            <input id="color-text" type="text" value="#000000" readonly />
+          </div>
+          <hr />
+          <div class="form-control">
+            <label for="opacity">Opacidade:</label>
+            <input min="0" max="1" value="1" step="0.1" id="opacity" type="range" />
+            <input id="opacity-text" type="text" value="1" readonly /> px
+          </div>
+          <hr />
+          <div class="form-control">
+            <label for="shadow">Sombra interna? (Inset)</label>
+            <input id="shadow" type="checkbox" />
+            <span id="checkmark"></span>
+          </div>
+          <hr />
+        </div>
+        <div id="box-shadow">
+          <h1>Preview do efeito gerado:</h1>
+          <div id="box"></div>
+        </div>
+      </div>
+
+      <div id="rules-css">
+        <h2>Copie e cole no seu arquivo de CSS:</h2>
+        <div id="rule">
+          <p>
+            box-shadow:
+            <span class="rule-values">5px 5px 10px 3px rgba(0, 0, 0, 1)</span>;
+          </p>
+          <p>
+            -webkit-box-shadow:
+            <span class="rule-values">5px 5px 10px 3px rgba(0, 0, 0, 1)</span>;
+          </p>
+          <p>
+            -moz-box-shadow:
+            <span class="rule-values">5px 5px 10px 3px rgba(0, 0, 0, 1)</span>;
+          </p>
+        </div>
+        <p>Clique no quadro acima para copiar as regras</p>
+      </div>
+    </div>
+  </body>
+</html>

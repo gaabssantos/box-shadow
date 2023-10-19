@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 70vw;
+  margin: 35px auto;
+}
+
+h1,
+h2 {
+  color: #555555;
+  font-size: 1.7rem;
+}
+
+hr {
+  border: 1px dashed rgb(180, 180, 180);
+  margin: 20px;
+}
+
+/* ------------------------------------------- */
+
+#config-box h1 {
+  text-align: center;
+}
+
+.form-control {
+  padding: 10px;
+}
+
+.form-control label {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  color: #555555;
+  margin: 15px 0;
+}
+
+.form-control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #c9c7c7;
+  width: 20rem;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.form-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #dfdf04;
+  height: 25px;
+  width: 25px;
+}
+
+.form-control input[type="text"] {
+  width: 40px;
+  padding: 5px;
+  text-align: center;
+}
+#color-text {
+  width: 80px;
+  float: right;
+}
+
+input[type="checkbox"] {
+  border: 0px;
+  width: 25px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* ------------------------------------------- */
+
+#container-box {
+  display: flex;
+}
+
+#box {
+  width: 450px;
+  height: 300px;
+  background-color: #ffff00;
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 1);
+}
+
+#box-shadow {
+  margin-left: 60px;
+  width: 45%;
+}
+
+#box-shadow h1 {
+  text-align: center;
+}
+
+/* ------------------------------------------- */
+
+#rules-css h2 {
+  text-align: center;
+}
+
+#rules-css > p {
+  text-align: center;
+  font-style: italic;
+}
+
+#rule {
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border: 3px solid #dfdf04;
+  background-color: #dfdedf;
+}
+
+/* ------------------------------------------- */
+
+@media (max-width: 575px) {
+  .container {
+    width: 100vw;
+  }
+
+  #container-box {
+    display: block;
+    margin: 50px 0;
+  }
+
+  #box {
+    width: 170%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1100px) {
+  .container {
+    width: 100vw;
+  }
+
+  #container-box {
+    display: block;
+    margin: 50px 0;
+  }
+
+  #box {
+    width: 170%;
+  }
+}
